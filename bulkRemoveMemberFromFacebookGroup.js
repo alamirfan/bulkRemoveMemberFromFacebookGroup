@@ -42,6 +42,8 @@ var removeMemberFromGroup = (function () {
         clickMenuButton(className, totalMember - 1);
         clickRemoveFromGroup();
         setTimeout(clickConfirm, 2000);
+      } else {
+        removeMemberFromGroup.stop();
       }
       console.log("Total Member Left: ", totalMember);
   }
